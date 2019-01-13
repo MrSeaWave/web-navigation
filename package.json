@@ -5,13 +5,11 @@
   "main": "index.js",
   "scripts": {
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
-    "cd-dir":"cd web-navigation-react",
-    "lint": "npm run lint"
+    "react-lint": "cd web-navigation-react  && npm run lint"
   },
   "pre-commit": [
     "precommit-msg",
-    "cd-dir",
-    "lint"
+    "react-lint"
   ],
   "repository": {
     "type": "git",
