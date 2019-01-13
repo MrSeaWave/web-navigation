@@ -1,0 +1,29 @@
+{
+  "name": "web-navigation",
+  "version": "1.0.0",
+  "description": "不同框架的web导航页面",
+  "main": "index.js",
+  "scripts": {
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
+    "cd-dir":"cd web-navigation-react",
+    "lint": "npm run lint"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "cd-dir",
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrSeaWave/web-navigation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrSeaWave/web-navigation/issues"
+  },
+  "homepage": "https://github.com/MrSeaWave/web-navigation#readme",
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  }
+}

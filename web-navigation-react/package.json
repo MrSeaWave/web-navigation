@@ -15,7 +15,10 @@
     "precommit-msg": "echo 'Pre-commit checks...' && exit 0",
     "lint": "eslint --ext .js src"
   },
-  "pre-commit": [ "precommit-msg", "lint" ],
+  "pre-commit": [
+    "precommit-msg",
+    "lint"
+  ],
   "browserslist": [
     ">0.2%",
     "not dead",
