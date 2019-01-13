@@ -10,7 +10,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit
-            {"dd22d"}
+            {"dd2d"}
             <code> src/App.js</code>
             and save to reload.
           </p>
