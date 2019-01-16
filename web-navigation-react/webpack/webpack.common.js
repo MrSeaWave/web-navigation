@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const config = require('../config');
 
 // 参考：https://webpack.docschina.org/guides/output-management/
 const srcPath = path.resolve(__dirname, '../src');
@@ -20,7 +21,8 @@ module.exports = {
     index: dir.js,
   }, // 项目唯一入口文件
   output: {
-    publicPath: '/', // 打包生成的`index.html`文件里面引用资源的前缀,注意看source
+    // publicPath: '/', // 打包生成的`index.html`文件里面引用资源的前缀,注意看source
+    publicPath: config.basePath,
     filename: '[name].[chunkhash].js',
     path: outputPath,
   },

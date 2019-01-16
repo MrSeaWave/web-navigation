@@ -4,10 +4,13 @@ import Register from '../Page/Register/index';
 import Login from '../Page/Login/index';
 import MainLayoutRouter from './MainLayoutRouter';
 import NotFound from '../Page/404/index';
+import config from '../../config';
 
+// TODO http://localhost:8080/login===http://localhost:8080/basePath/login 这是个错误的等于，
+// 控制台出现了warning
 const RouterConfig = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={config.basePath}>
       <Switch>
         <Route path="/register" component={Register} exact />
         <Route path="/login" component={Login} exact />
