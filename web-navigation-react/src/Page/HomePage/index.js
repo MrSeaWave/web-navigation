@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { Button } from 'antd';
+import TestProps from './TestProps';
+import TestChildren from './TestChildren';
+
 
 class HomePage extends Component {
   constructor(props) {
@@ -7,7 +11,15 @@ class HomePage extends Component {
   }
 
   render() {
-    return <div>首页</div>;
+    return (
+      <div>
+        首页
+        <TestProps>
+          <TestChildren />
+        </TestProps>
+        <Button type="primary">button</Button>
+      </div>
+    );
   }
 }
 
