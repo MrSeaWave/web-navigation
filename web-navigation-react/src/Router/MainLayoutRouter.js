@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import MainLayout from '../Page/Layout/MainLayout';
+import MainLayout from '../Page/Layout/MainLayout/MainLayout';
 import HomePage from '../Page/HomePage';
 import TestFile from '../Page/testFile';
 
