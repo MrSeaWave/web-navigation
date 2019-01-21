@@ -4,7 +4,7 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common');
 const config = require('../config');
 
-const port = 8080;
+const { port } = config;
 module.exports = merge(common, {
   mode: 'development',
   devtool: 'inline-source-map', // 更容易地追踪错误和警告
