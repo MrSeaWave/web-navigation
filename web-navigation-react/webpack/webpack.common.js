@@ -2,7 +2,9 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
 const config = require('../config');
+
 
 // 参考：https://webpack.docschina.org/guides/output-management/
 const srcPath = path.resolve(__dirname, '../src');
@@ -53,6 +55,16 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
           },
           'css-loader',
+        ],
+      },
+      {
+        test: /\.less$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          'css-loader',
+          'less-loader',
         ],
       },
       {

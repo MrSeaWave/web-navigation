@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './index.less';
 
 class MainLayout extends Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class MainLayout extends Component {
     // console.log('this.props', this.props);
     const { children } = this.props;
     return (
-      <div>
+      <div className="test">
         <h2>主要布局</h2>
         {children}
       </div>
