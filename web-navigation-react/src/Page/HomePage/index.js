@@ -3,7 +3,6 @@ import { Button } from 'antd';
 import TestProps from './TestProps';
 import TestChildren from './TestChildren';
 
-
 class HomePage extends Component {
   constructor(props) {
     super(props);
@@ -14,6 +13,7 @@ class HomePage extends Component {
     return (
       <div>
         首页
+        {/* <div style={{ backgroundColor: 'red', height: 1000 }}>222</div> */}
         <TestProps>
           <TestChildren />
         </TestProps>

@@ -1,3 +1,32 @@
-.test{
-  background: antiquewhite;
+@import '../../../Style/index.less';
+@import '../../../Style/color.less';
+
+.main-layout {
+  &-header {
+    padding: 0 50px;
+    height: @headerHeight;
+    background: @palette-blue-6;
+    color: #ffffff;
+    box-shadow: 0 1px 0 rgba(12, 13, 14, 0.1), 0 1px 6px rgba(59, 64, 69, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - @headerHeight);
+    overflow: auto;
+    &-children {
+      padding: 10px;
+    }
+    &-footer {
+      padding: 50px;
+      text-align: center;
+      .footer-icon {
+        margin: 0 10px;
+        color: @palette-red-6;
+      }
+    }
+  }
 }
