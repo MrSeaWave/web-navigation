@@ -1,6 +1,7 @@
 # TODO List
 
-- [ ] 引入 LIVE 2D
+- [ ] 修改 LIVE 2D，取消 jquery 引入，代码放入 react 中
+- [ ] 引入 wired-elements
 - [ ] 增加页面
 - [ ] 增加模糊搜索
 - [ ] 增加导航 datasource 数据
@@ -12,6 +13,7 @@
 
 ## 2019-01-16
 
+- [x] 引入 LIVE 2D
 - [x] 可使用 less
 - [x] 增加 basePath
 - [x] 增加必要的组件
