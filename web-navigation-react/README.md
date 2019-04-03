@@ -34,7 +34,7 @@ chore：构建过程或辅助工具的变动
 
 ## :rocket: TODOLIST
 
-[详见](./TOODLIST)
+[详见](./TOODLIST.md)
 
 ## :checkered_flag: CHANGELOG
 
