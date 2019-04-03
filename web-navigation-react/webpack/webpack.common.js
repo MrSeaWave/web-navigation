@@ -5,7 +5,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const config = require('../config');
 
-
 // 参考：https://webpack.docschina.org/guides/output-management/
 const srcPath = path.resolve(__dirname, '../src');
 const publicPath = path.resolve(__dirname, '../public');
@@ -64,7 +63,18 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
           },
           'css-loader',
-          'less-loader',
+          {
+            loader: 'less-loader',
+            options: {
+              modifyVars: {
+                'primary-color': '#1DA57A',
+                'link-color': '#1DA57A',
+                'border-radius-base': '2px',
+              },
+              javascriptEnabled: true,
+            },
+          },
+          // 'less-loader',
         ],
       },
       {
